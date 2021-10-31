@@ -1,0 +1,11 @@
+program      =  { line } ;
+line         =  (declaration | statement), ";" ;
+declaration  =  "def", ident, "as", { expression } ;
+statement    =  { expression } ;
+ident        =  letter, { letter | digit } ;
+expression   =  builtin | invocation | number | string ;
+number       =  [ "-" ], digit, { digit } ;
+invocation   =  ident
+string       =  "\"", { character }, "\"" ;
+builtin      =  "acc" | "accn" | "push" | "pop" | "rot" | "ptrd" |
+			 	"ptwt" | "add" | "sub" | "print" | "jmp" ;

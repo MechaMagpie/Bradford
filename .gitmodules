@@ -1,0 +1,3 @@
+[submodule "js-parsing-helpers"]
+	path = js-parsing-helpers
+	url = git@github.com:MechaMagpie/js-parsing-helpers.git
